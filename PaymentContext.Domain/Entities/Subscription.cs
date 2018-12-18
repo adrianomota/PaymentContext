@@ -51,7 +51,7 @@ namespace PaymentContext.Domain.Entities
         {
             if (_payments.Any())
             {
-                AddNotification("Subscription.Payments", "Nenhum pagamento associado");
+                AddNotification("Subscription.Payments", "Nenhum pagamento associado para a assinatura!");
 
             }
         }
