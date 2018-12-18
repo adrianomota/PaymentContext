@@ -11,12 +11,14 @@ namespace PaymentContext.Domain.Entities
         private IList<Payment> _payments;
         private Subscription()
         {
-            _payments = new List<Payment>();
+
         }
 
         public Subscription(DateTime? expireDate)
         {
             ExpireDate = expireDate;
+            _payments = new List<Payment>();
+            Active = true;
         }
 
         public DateTime CreateDate { get; private set; }
@@ -40,20 +42,23 @@ namespace PaymentContext.Domain.Entities
             );
             _payments.Add(payment);
         }
-
         public void MakeActive()
         {
             Active = true;
             LastUpdateDate = DateTime.Now;
         }
+        public void CheckPaymentAssociate()
+        {
+            if (_payments.Any())
+            {
+                AddNotification("Subscription.Payments", "Nenhum pagamento associado");
 
-
+            }
+        }
         public void InaActived()
         {
             Active = false;
             LastUpdateDate = DateTime.Now;
         }
-
-
     }
 }

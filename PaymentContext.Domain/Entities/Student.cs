@@ -11,7 +11,7 @@ namespace PaymentContext.Domain.Entities
         private IList<Subscription> _subscriptions;
         private Student()
         {
-            _subscriptions = new List<Subscription>();
+
         }
 
         public Student(Name name, Document document, Email email, Address address)
@@ -20,7 +20,7 @@ namespace PaymentContext.Domain.Entities
             Document = document;
             Email = email;
             Address = address;
-
+            _subscriptions = new List<Subscription>();
             AddNotifications(name, document, email);
         }
 
@@ -49,10 +49,11 @@ namespace PaymentContext.Domain.Entities
                 );
             }
 
-            foreach (var sub in Subscriptions)
-            {
-                sub.MakeActive();
-            }
+            if (!subscription.Payments.Any())
+                AddNotification("Subscription.Payment", "A subscricao deve conter um pagamento associado!");
+
+            subscription.CheckPaymentAssociate();
+            subscription.MakeActive();
 
             _subscriptions.Add(subscription);
         }
