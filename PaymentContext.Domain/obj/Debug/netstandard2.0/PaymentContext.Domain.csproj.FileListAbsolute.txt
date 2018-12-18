@@ -1,0 +1,12 @@
+/Users/adrianomota/git-projects/PaymentContext/PaymentContext.Domain/bin/Debug/netstandard2.0/PaymentContext.Domain.deps.json
+/Users/adrianomota/git-projects/PaymentContext/PaymentContext.Domain/bin/Debug/netstandard2.0/PaymentContext.Domain.dll
+/Users/adrianomota/git-projects/PaymentContext/PaymentContext.Domain/bin/Debug/netstandard2.0/PaymentContext.Domain.pdb
+/Users/adrianomota/git-projects/PaymentContext/PaymentContext.Domain/obj/Debug/netstandard2.0/PaymentContext.Domain.csprojAssemblyReference.cache
+/Users/adrianomota/git-projects/PaymentContext/PaymentContext.Domain/obj/Debug/netstandard2.0/PaymentContext.Domain.csproj.CoreCompileInputs.cache
+/Users/adrianomota/git-projects/PaymentContext/PaymentContext.Domain/obj/Debug/netstandard2.0/PaymentContext.Domain.AssemblyInfoInputs.cache
+/Users/adrianomota/git-projects/PaymentContext/PaymentContext.Domain/obj/Debug/netstandard2.0/PaymentContext.Domain.AssemblyInfo.cs
+/Users/adrianomota/git-projects/PaymentContext/PaymentContext.Domain/obj/Debug/netstandard2.0/PaymentContext.Domain.dll
+/Users/adrianomota/git-projects/PaymentContext/PaymentContext.Domain/obj/Debug/netstandard2.0/PaymentContext.Domain.pdb
+/Users/adrianomota/git-projects/PaymentContext/PaymentContext.Domain/bin/Debug/netstandard2.0/PaymentContext.Shared.dll
+/Users/adrianomota/git-projects/PaymentContext/PaymentContext.Domain/bin/Debug/netstandard2.0/PaymentContext.Shared.pdb
+/Users/adrianomota/git-projects/PaymentContext/PaymentContext.Domain/obj/Debug/netstandard2.0/PaymentContext.Domain.csproj.CopyComplete
